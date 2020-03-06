@@ -121,7 +121,7 @@ module.exports = TeacherSignupStoreModule = {
           window.application.tracker?.trackEvent 'Finished Signup', category: "Signup", label: loginMethod
         )
 
-        return Promise.all(trackerCalls...)
+        return Promise.all(trackerCalls)
   }
 }
 
